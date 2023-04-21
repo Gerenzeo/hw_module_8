@@ -46,7 +46,7 @@ def get_birthdays_per_week(users):
 
     for key, values in collected_birthdays.items():
         if collected_birthdays[key] != []:
-            print(f'{key[1].title()}:', ", ".join([value for value in set(values)]))
+            print(f'{key[1].title()}:', ", ".join([value for value in values]))
     
 if __name__ == '__main__':
     get_birthdays_per_week(users)
